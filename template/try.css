@@ -1,0 +1,74 @@
+	body {
+		font-family:arial,helvetica,sans-serif;
+		font-size:12px;
+		background-image: url("http://www.widescreen-				wallpapers.de/wallpapers/476-low-flight-1.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
+		background-color: #cccccc;
+	}
+	#wrapper {
+		width:80%;
+		margin:30px auto;
+		padding:5px;
+	}
+	#header {
+		width:100%;
+		height:80px;
+		border:1px solid #bbb;
+	}
+	#main1 {
+		margin-top:10px;
+		margin-right:0%;
+		float:left;
+		width:50%;
+		height:500px;
+		border:1px solid #bbb;
+	}
+	#a1 {
+		margin-top:10px;
+		margin-left:10px;
+		float:right;
+		width:22%;
+		height:245px;
+		border:1px solid #bbb;
+	}
+	#a2 {
+		margin-top:10px;
+		float:right;
+		margin-right:0%;
+		width:22%;
+		height:245px;
+		border:1px solid #bbb;
+	}
+	#a3 {
+		margin-top:10px;
+		margin-left:10px;
+		margin-right:0%;
+		float:right;
+		width:22%;
+		height:245px;
+		border:1px solid #bbb;
+	}
+	#a4 {
+		margin-top:10px;
+		float:right;
+		margin-right:0%;
+		width:22%;
+		height:245px;
+		border:1px solid #bbb;
+	}
+	#main3 {
+		margin-top:10px;
+		float:left;
+		width:100%;
+		height:200px;
+		border:1px solid #bbb;
+	}
+	#footer {
+		margin-top:10px;
+		float:left;
+		width:100%;
+		height:80px;
+		border:1px solid #bbb;
+	}
