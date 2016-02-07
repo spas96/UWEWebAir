@@ -1,0 +1,5 @@
+CREATE TABLE fixed_fare
+(
+ff_journey_info varchar(50),	
+ff_journey_fare money(5),
+);
