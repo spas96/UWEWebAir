@@ -1,0 +1,7 @@
+CREATE TABLE journey_times
+(
+jt_leave_dest varchar(25),
+jt_leave_time time(6),
+jt_arrive_dest varchar (25),
+jt_arrive_time time (6),
+);
