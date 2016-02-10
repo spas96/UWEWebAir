@@ -1,11 +1,12 @@
 	body {
 		font-family:arial,helvetica,sans-serif;
+		background-image: url("http://i65.tinypic.com/2q1dxr8.jpg");
 		font-size:12px;
-		background-image: url("http://www.widescreen-				wallpapers.de/wallpapers/476-low-flight-1.jpg");
-		background-repeat: no-repeat;
+		background-repeat: repeat;
+		background-size:cover;
 		background-attachment: fixed;
 		background-position: center; 
-		background-color: #cccccc;
+		background-color: #61a4e8;
 	}
 	#wrapper {
 		width:80%;
@@ -13,33 +14,152 @@
 		padding:5px;
 	}
 	#header {
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		position: relative;
 		width:100%;
 		height:80px;
-		border:1px solid #bbb;
+		/*border:1px solid #bbb;*/
+		opacity: 0.93;
 	}
 	#main1 {
-		margin-top:10px;
+		margin-top:50px;
 		margin-right:0%;
 		float:left;
 		width:50%;
 		height:500px;
-		border:1px solid #bbb;
+		/*border:1px solid #bbb;*/
+		display: flex;
+		justify-content: center;
 	}
+
+	#main1-1 {
+		margin:13px auto;
+		width:95%;
+		height:93%;
+		border:10px solid #b0c4de;
+		border-radius:30px;
+		-moz-border-radius:30px;
+		-webkit-border-radius:40px;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		position: relative;
+
+	}
+
+
+	#frame{
+		position:relative;
+		margin:50px auto;
+		width:80%;
+		height:80%;
+		/*border:1px solid #bbb;*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.8;
+	}
+	
+	#top-frame{
+		position:relative;
+		top: 15px;
+		left: -5%;
+		width:110%;
+		height:18%;
+		/*border:1px solid #bbb;*/
+	}
+	
+	
+	#logo-box{
+		position:absolute;
+		top: 0px;
+		left: 20px;
+		width:150px;
+		height:80px;
+	}
+	
+	
+	#left-edge-shadow{
+		position:relative;
+		left:-12%;
+		top: 20px;
+		width:5%;
+		height:5px;
+		/*border:1px solid #bbb;*/
+	}
+	
+	#right-edge-shadow{
+		position:relative;
+		right:-107%;
+		top: 15;
+		width:5%;
+		height:5px;
+		/*border:1px solid #bbb;*/
+	}
+	
+	#main1-left-clamp{
+		position:absolute;
+		top: 80px;
+		left: 10%;
+		width:4%;
+		height:50px;
+		/*border:1px solid #bbb;*/
+	}
+	
+	#main1-right-clamp{
+		position:absolute;
+		top: 80px;
+		left: 36%;
+		width:4%;
+		height:50px;
+		/*border:1px solid #bbb;*/
+	}
+	
+	#offers {
+		width:140px;
+		height: 140px;
+		position: absolute;
+		right:10.3%;
+		opacity: 0.9;
+	 	border-top:10px solid #8c9cb1;
+		border-right:10px solid #8c9cb1;
+	}
+
+	#red-line {
+			border-bottom: 30px solid red;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			height: 0;
+			width: 100%;
+			position: absolute;
+			right:-40%;
+			top:20%;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform:rotate(45deg);
+			display: flex;
+			justify-content: center;
+			align-items: top;
+			font-size:20px;
+	}
+
 	#a1 {
-		margin-top:10px;
+		margin-top:50px;
 		margin-left:10px;
 		float:right;
 		width:22%;
 		height:245px;
-		border:1px solid #bbb;
+		
 	}
 	#a2 {
-		margin-top:10px;
+		margin-top:50px;
 		float:right;
 		margin-right:0%;
 		width:22%;
 		height:245px;
-		border:1px solid #bbb;
 	}
 	#a3 {
 		margin-top:10px;
@@ -48,7 +168,6 @@
 		float:right;
 		width:22%;
 		height:245px;
-		border:1px solid #bbb;
 	}
 	#a4 {
 		margin-top:10px;
@@ -56,19 +175,428 @@
 		margin-right:0%;
 		width:22%;
 		height:245px;
-		border:1px solid #bbb;
 	}
 	#main3 {
-		margin-top:10px;
+		margin-top:50px;
 		float:left;
 		width:100%;
-		height:200px;
-		border:1px solid #bbb;
+		height:auto;
+		/*border:1px solid #b0c4de;*/
 	}
+	
 	#footer {
-		margin-top:10px;
+		margin-top:50px;
+		margin-bottom:50px;
 		float:left;
 		width:100%;
 		height:80px;
-		border:1px solid #bbb;
+		position: relative;
+		opacity: 0.9;
+	 	/*border:1px solid #bbb;*/
+	}
+	
+	#a1-pic {
+		
+		position: relative;
+		-webkit-border-radius: 30em;
+		-moz-border-radius: 30em;
+		border-radius: 30em;
+	}
+	
+	
+	#footer-position {
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		float:left;
+		width:100%;
+		height:80px;
+		position: relative;
+	}
+	
+	#header-position {
+		position: absolute;
+		bottom:-23;
+		right:30;
+	}
+
+	#main-position {
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		float:left;
+		width:100%;
+		height:50%;
+		position: absolute;
+	}
+
+
+	#box {
+		position:relative;
+		width:100%;
+		height:500px;
+		margin:0px auto;
+		opacity: 0.95;
+	}
+
+	#box1 {
+		position:relative;
+		width:100%;
+		height:100%;
+	}
+
+
+	#box-gradient {
+		position:absolute;
+		width:100%;
+		height:100%;
+		border-radius:20px;
+		-moz-border-radius:20px;
+		-webkit-border-radius:30px;
+		background: -webkit-linear-gradient(red 10%, green 85%, blue 90%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(red 10%, green 85%, blue 90%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#3d605f 10%, #177246 85%, #3d605f 90%); /* For Firefox 3.6 to 15 */
+		background: -webkit-linear-gradient(#3d605f 0%, #177246	50%, #3d605f 100%) , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC));
+		background: linear-gradient(#3d605f 0%, #177246	50%, #3d605f 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC)); /* Standard syntax (must be last) */
+
+	}
+
+	#frame-gradient {
+		position:relative;
+		width:100%;
+		height:100%;
+		background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+		background: -webkit-linear-gradient(#b0c4de 0%, #8c9cb1	50%, #b0c4de 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC));
+		background: linear-gradient(#b0c4de 0%, #8c9cb1	50%, #b0c4de 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC)); /* Standard syntax (must be last) */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size:40px;
+		text-shadow: 2px 2px #3d605f;
+	}
+	
+	#clamp-gradient {
+		position:relative;
+		width:100%;
+		height:100%;
+		background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+		background: -webkit-linear-gradient(#b0c4de 0%, #8c9cb1	50%, #b0c4de 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC));
+		background: linear-gradient(#707d8e 0%, #5b636d	50%, #707d8e 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC)); /* Standard syntax (must be last) */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size:23;
+		text-shadow: 2px 2px #3d605f;
+	}
+	
+	#header-gradient {
+		position:relative;
+		width:100%;
+		height:100%;
+		border-radius:20px;
+		-moz-border-radius:20px;
+		-webkit-border-radius:30px;
+		background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+		background: -webkit-linear-gradient(#b0c4de 0%, #8c9cb1	50%, #b0c4de 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC));
+		background: linear-gradient(#3d605f 0%, #177246	50%, #3d605f 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC)); /* Standard syntax (must be last) */
+		font-size:23;
+		text-shadow: 2px 2px #3d605f;
+	}
+	
+
+
+	.london {
+	  background: url("http://cdn.londonandpartners.com/assets/73295-640x360-london-skyline-ns.jpg");
+	  background-repeat: no-repeat;
+	  background-size:cover;
+	  width: 100%; height: 100%;
+	  -webkit-box-shadow:
+				inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f;
+	  
+		 -moz-box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+	  
+			box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+					
+			border-radius:20px;
+			-moz-border-radius:20px;
+			-webkit-border-radius:30px;
+			opacity: 0.85;
+			font-size:0px;
+	}
+	
+	.london:hover{
+		-webkit-box-shadow:
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f;
+	  
+		-moz-box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+	  
+		box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+					
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		font-size:40px;
+		text-shadow: 2px 2px #3d605f;
+	}
+
+	.bristol {
+	  background: url("http://i.telegraph.co.uk/multimedia/archive/02227/bristol_2227246i.jpg");
+	  background-repeat: no-repeat;
+	  background-size:cover;
+	  background-position: center;
+	  width: 100%; height: 100%;
+	  -webkit-box-shadow:
+				inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f;
+	  
+		 -moz-box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+	  
+			  box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+					
+			border-radius:20px;
+			-moz-border-radius:20px;
+			-webkit-border-radius:30px;
+			opacity: 0.85;
+
+		font-size:0;
+	}
+	
+	.bristol:hover{
+		-webkit-box-shadow:
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f;
+	  
+		-moz-box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+	  
+		box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+					
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		
+		text-shadow: 2px 2px #3d605f;
+		font-size:40px;
+	}
+	
+	
+	
+	
+	.edinburgh {
+	  background: url("https://media-cdn.tripadvisor.com/media/photo-s/03/9b/2d/c9/edinburgh.jpg");
+	  background-repeat: no-repeat;
+	  background-size:cover;
+	  background-position: center; 
+	  width: 100%; height: 100%;
+	  -webkit-box-shadow:
+				inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f;
+	  
+		 -moz-box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+	  
+			  box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+					
+			border-radius:20px;
+			-moz-border-radius:20px;
+			-webkit-border-radius:30px;
+			opacity: 0.85;
+			font-size:0px;
+	}
+	
+	.edinburgh:hover{
+		-webkit-box-shadow:
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f;
+	  
+		-moz-box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+	  
+		box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+				
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		font-size:40px;
+		text-shadow: 2px 2px #3d605f;
+	}
+	
+	.southampton {
+	  background: url("http://exp.cdn-hotels.com/hotels/1000000/10000/6100/6072/6072_204_z.jpg");
+	  background-repeat: no-repeat;
+	  background-size:cover;
+	  background-position: center; 
+	  width: 100%; height: 100%;
+	  -webkit-box-shadow:
+				inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f,
+					inset 0 0 100px 3d605f;
+	  
+		 -moz-box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+	  
+			  box-shadow:
+				inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f,
+					inset 0 0 100px #3d605f;
+					
+			border-radius:20px;
+			-moz-border-radius:20px;
+			-webkit-border-radius:30px;
+			opacity: 0.85;
+			font-size:0px;
+	}
+
+	.southampton:hover{
+		-webkit-box-shadow:
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f,
+				inset 0 0 300px 3d605f;
+	  
+		-moz-box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+	  
+		box-shadow:
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f,
+				inset 0 0 300px #3d605f;
+					
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		font-size:40px;
+		text-shadow: 2px 2px #3d605f;
+		
+	}
+	
+	p.tickets {
+		font-size: 0.35em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	p.head {
+		font-size: 0.5em;
+		display: flex;
+		justify-content: center;
+		align-items: top;
+	}
+	
+	@media only screen and (min-width: 1350px) {
+		p.tickets {
+			font-size: 0.65em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	
+	@media only screen and (min-width: 1350px) {
+		p.head {
+			font-size: 0.9em;
+			display: flex;
+			justify-content: center;
+			align-items: top;
+		}
+	}
+
+	#box-shadow {
+		position:absolute;
+		left:50%;
+		margin:0 0 -0.4% -40%;
+		bottom:8px;
+		width:80%;
+		height:16px;
+		background:#fff;
+		border-radius:290px / 8px;
+		-moz-border-radius:290px / 8px;
+		-webkit-border-radius:290px / 8px;
+		box-shadow:0 10px 20px #000;
+		-moz-box-shadow:0 10px 20px #000;
+		-webkit-box-shadow:0 10px 20px #000;
+	}
+	
+	#rotate-shadow {
+		position:absolute;
+		left:46.5%;
+		margin:0 0 -0.4% -40%;
+		bottom:86.5px;
+		width:119%;
+		height:16px;
+		background:#fff;
+		border-radius:290px / 8px;
+		-moz-border-radius:290px / 8px;
+		-webkit-border-radius:290px / 8px;
+		box-shadow:0 10px 20px #000;
+		-moz-box-shadow:0 10px 20px #000;
+		-webkit-box-shadow:0 10px 20px #000;
+					-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform:rotate(45deg);
+		
+	}
+
+	#type-box{
+	  border: solid 5px #fff;
+	  box-shadow: inset 1px 1px 2px 0 #707070;
 	}
