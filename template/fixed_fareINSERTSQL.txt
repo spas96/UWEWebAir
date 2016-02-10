@@ -1,14 +1,14 @@
+INSERT INTO fixed_fare (ff_fare_num, ff_journey_info, ff_journey_fare)
+VALUES ('001', 'Bristol-Manchester','30');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Bristol-Manchester','30');
+VALUES ('002', 'Bristol-Newcastle','40');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Bristol-Newcastle','40');
+VALUES ('003', 'Bristol-Glasgow','50');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Bristol-Glasgow','50');
+VALUES ('004', 'Bristol-London','25');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Bristol-London','25');
+VALUES ('005', 'Manchester-Southampton','20');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Manchester-Southampton','20');
+VALUES ('006', 'Cardiff-Edinburgh','45');
 INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('Cardiff-Edinburgh','45');
-INSERT INTO fixed_fare (ff_journey_info, ff_journey_fare)
-VALUES ('All other routes are charged at:','35');
+VALUES ('007', 'All other routes are charged at:','35');
