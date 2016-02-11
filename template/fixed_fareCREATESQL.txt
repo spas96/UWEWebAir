@@ -2,6 +2,6 @@ CREATE TABLE fixed_fare
 (
 ff_fare_num integer (3) NOT NULL,
 ff_journey_info varchar(50),	
-ff_journey_fare money(5),
+ff_journey_fare decimal(5,2),
 PRIMARY KEY (ff_fare_num)
 );
