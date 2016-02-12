@@ -20,7 +20,7 @@
 			$( ".start_date" ).datepicker({
 				onClose: function( selectedDate ) {
 				$( ".end_date" ).datepicker( "option", "minDate", selectedDate );
-				$( ".start_date_required" ).val($( ".start_date" ));
+				$( ".start_date_required" ).val($( ".start_date" ).val());
 			},
 			 beforeShowDay: function(date) {
 				var day = date.getDay();
@@ -34,7 +34,7 @@
 			$( ".end_date" ).datepicker({
 				onClose: function( selectedDate ) {
 				$( ".start_date" ).datepicker( "option", "maxDate", selectedDate );
-				$( ".end_date_required" ).val($( ".end_date" ));
+				$( ".end_date_required" ).val($( ".end_date" ).val());
 			  },
 			 beforeShowDay: function(date) {
 				var day = date.getDay();
