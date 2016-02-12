@@ -46,13 +46,17 @@ $(function()
                       searchField1.value = this.innerHTML.replace(/\<\/?span\>/ig,"");
 					  if((searchField1.value=="Bristol" && searchField2.value=="London") || (searchField1.value=="London" && searchField2.value=="Manchester") || (searchField1.value=="Bristol" && searchField2.value=="Glasgow") || (searchField1.value=="Glasgow" && searchField2.value=="Newcastle") || (searchField1.value=="Newcastle" && searchField2.value=="Manchester")){
 						  var myElement = document.querySelector(".end_date");
+						  var myElementReq = document.querySelector(".end_date_required");
 						  myElement.style.backgroundColor = "#bbb";
 						  myElement.setAttribute("disabled", "true"); 
+						  myElementReq.removeAttribute("required"); 
 					  }
 					  else{
 						  var myElement = document.querySelector(".end_date");
+						  var myElementReq = document.querySelector(".end_date_required");
 						  myElement.style.backgroundColor = "white";
 						 myElement.removeAttribute("disabled");
+						 myElementReq.setAttribute("required", "true");
 					  }
 
                       resultsDiv.style.display = "none";
@@ -99,13 +103,17 @@ $(function()
                       searchField2.value = this.innerHTML.replace(/\<\/?span\>/ig,"");
 					  if((searchField1.value=="Bristol" && searchField2.value=="London") || (searchField1.value=="London" && searchField2.value=="Manchester") || (searchField1.value=="Bristol" && searchField2.value=="Glasgow") || (searchField1.value=="Glasgow" && searchField2.value=="Newcastle") || (searchField1.value=="Newcastle" && searchField2.value=="Manchester")){
 						  var myElement = document.querySelector(".end_date");
+						  var myElementReq = document.querySelector(".end_date_required");
 						  myElement.style.backgroundColor = "#bbb";
-						  myElement.setAttribute("disabled", "true"); 
+						  myElement.setAttribute("disabled", "true");
+						  myElementReq.removeAttribute("required");						  
 					  }
 					  else{
 						  var myElement = document.querySelector(".end_date");
+						  var myElementReq = document.querySelector(".end_date_required");
 						  myElement.style.backgroundColor = "white";
 						 myElement.removeAttribute("disabled");
+						 myElementReq.setAttribute("required", "true");
 					  }
                       resultsDiv1.style.display = "none";
                   };
