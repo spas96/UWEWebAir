@@ -17,12 +17,16 @@ $(function()
 	  var resultsDiv1 = document.getElementById("results1");
       var searchField1 = form.start_dest;
 	  var searchField2 = form.end_dest;
+	  
 
 
       
       // now, attach the keyup handler to the search field:
+
       searchField1.onkeyup = function()
       {
+
+
           var txt = this.value.toLowerCase();
           if ( txt.length == 0 ) return;
 
@@ -38,7 +42,19 @@ $(function()
                   var div = document.createElement("div");
                   div.innerHTML = srch;
                   div.onclick = function() {
+
                       searchField1.value = this.innerHTML.replace(/\<\/?span\>/ig,"");
+					  if((searchField1.value=="Bristol" && searchField2.value=="London") || (searchField1.value=="London" && searchField2.value=="Manchester") || (searchField1.value=="Bristol" && searchField2.value=="Glasgow") || (searchField1.value=="Glasgow" && searchField2.value=="Newcastle") || (searchField1.value=="Newcastle" && searchField2.value=="Manchester")){
+						  var myElement = document.querySelector(".end_date");
+						  myElement.style.backgroundColor = "#bbb";
+						  myElement.setAttribute("disabled", "true"); 
+					  }
+					  else{
+						  var myElement = document.querySelector(".end_date");
+						  myElement.style.backgroundColor = "white";
+						 myElement.removeAttribute("disabled");
+					  }
+
                       resultsDiv.style.display = "none";
                   };
                   div.style.top = top + "px";
@@ -51,6 +67,7 @@ $(function()
       // and the keydown handler:
       searchField1.onkeydown = function() 
       {
+
           while ( resultsDiv.firstChild != null )
           {
               resultsDiv.removeChild( resultsDiv.firstChild );          
@@ -80,6 +97,16 @@ $(function()
                   div.innerHTML = srch;
                   div.onclick = function() {
                       searchField2.value = this.innerHTML.replace(/\<\/?span\>/ig,"");
+					  if((searchField1.value=="Bristol" && searchField2.value=="London") || (searchField1.value=="London" && searchField2.value=="Manchester") || (searchField1.value=="Bristol" && searchField2.value=="Glasgow") || (searchField1.value=="Glasgow" && searchField2.value=="Newcastle") || (searchField1.value=="Newcastle" && searchField2.value=="Manchester")){
+						  var myElement = document.querySelector(".end_date");
+						  myElement.style.backgroundColor = "#bbb";
+						  myElement.setAttribute("disabled", "true"); 
+					  }
+					  else{
+						  var myElement = document.querySelector(".end_date");
+						  myElement.style.backgroundColor = "white";
+						 myElement.removeAttribute("disabled");
+					  }
                       resultsDiv1.style.display = "none";
                   };
                   div.style.top = top + "px";
