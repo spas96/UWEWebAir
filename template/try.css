@@ -244,7 +244,7 @@
   		justify-content: center;
   		align-items: center;
 		position: relative;
-		top:120px;
+		top:100px;
 	}	
 
 	#results {
@@ -424,7 +424,7 @@
   		justify-content: center;
   		align-items: center;
 		position: relative;
-		top:150px;
+		top:130px;
 	}
 	
 	@media only screen and (min-width: 1350px) {
@@ -494,8 +494,18 @@
 		position:relative;
 		display: flex;
   		justify-content: flex-end;
-  		top:170px;
-		right:50px;
+  		top:140px;
+		right:7%;
+	}
+	
+	@media only screen and (min-width: 1350px) {
+		.button{
+			position:relative;
+			display: flex;
+			justify-content: flex-end;
+			top:140px;
+			right:15%;
+		}
 	}
 
 	#box {
