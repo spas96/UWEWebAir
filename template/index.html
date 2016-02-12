@@ -20,6 +20,7 @@
 			$( ".start_date" ).datepicker({
 				onClose: function( selectedDate ) {
 				$( ".end_date" ).datepicker( "option", "minDate", selectedDate );
+				$( ".start_date_required" ).val($( ".start_date" ));
 			},
 			 beforeShowDay: function(date) {
 				var day = date.getDay();
@@ -33,6 +34,7 @@
 			$( ".end_date" ).datepicker({
 				onClose: function( selectedDate ) {
 				$( ".start_date" ).datepicker( "option", "maxDate", selectedDate );
+				$( ".end_date_required" ).val($( ".end_date" ));
 			  },
 			 beforeShowDay: function(date) {
 				var day = date.getDay();
@@ -41,6 +43,12 @@
 			maxDate: '+3M'
 			});
         })
+</script>
+
+<script>
+	$(".start_date").keydown(function (event) {
+		event.preventDefault();
+	});
 </script>
 </head>
 
@@ -113,7 +121,7 @@
 											
 											<form id="search-box">
 											
-												
+													<div>
 												
 														<div id="main-position1">
 															
@@ -121,15 +129,21 @@
 															
 															<input name="end_dest" class="end_dest" type="text" autocomplete="off"  placeholder= "To" required/>	
 														</div>
+														
+														<div id="req-position">
+															<input name="start_date_required" class="start_date_required" type="text" autocomplete="off"  placeholder= "Depart" required/>
+															<input name="end_date_required" class="end_date_required" type="text" autocomplete="off"  placeholder= "Return" required/>	
+														</div>
 												
 														<div id="main-position2">
 															<input name="start_date" class="start_date" type="text" autocomplete="off" readonly='true'  placeholder= "Depart" required/>
 															<input name="end_date" class="end_date" type="text" autocomplete="off" readonly='true'  placeholder= "Return" required/>	
 														</div>
-													
 														<div class="button">
 															<input type="submit" value="Submit" class="send-button">
 														</div>
+													</div>
+														
 											</form>
 										
 											
