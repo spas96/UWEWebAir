@@ -46,14 +46,23 @@
 </script>
 
 <script>
-	$(".start_date").keydown(function (event) {
-		event.preventDefault();
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	$("#load_screen").animate({ opacity: '0'}, 3000, function(){
+	document.body.removeChild(load_screen);
 	});
+	});
+	
 </script>
 </head>
 
 
 <body>
+<div class="mpc_preloader" id="load_screen">
+	<div class="mpc_preloader18"></div>
+	<span class="mpc_preloader18_label">Loading...</span>
+</div>
+
 	<div id="wrapper">
 		<div id="header">
 
@@ -121,14 +130,36 @@
 											
 											<form id="search-box">
 											
-													<div>
+													
 												
 														<div id="main-position1">
 															
-															<input name="start_dest" class="start_dest" type="text" autocomplete="off"  placeholder= "From"  required/>
+															<input name="start_dest" id="start_dest" class="start_dest" type="text" autocomplete="off"  placeholder= "From"  required/>
 															
-															<input name="end_dest" class="end_dest" type="text" autocomplete="off"  placeholder= "To" required/>	
+															<input name="end_dest" id="end_dest" class="end_dest" type="text" autocomplete="off"  placeholder= "To" required/>	
 														</div>
+														
+														<div id="main-position3">
+															<div id="ways">
+																<div id="contentcolumn">
+																	<input type="radio" name="radio" id="radio1" class="radio" checked/>
+																	<label for="radio1">One Way</label>
+																</div>
+																<div id="leftcolumn">
+																		<input type="radio" name="radio" id="radio2" class="radio"/>
+																		<label for="radio2">Return</label>
+																</div>
+															</div>
+															<div id="passangers">
+																	<div id="contentcolumn">
+																		<input name="start_date_required" id="adl" class="passangers" type="text" autocomplete="off"  placeholder= "Adults" required/>
+																	</div>
+																
+																	<div id="leftcolumn">
+																		<input name="start_date_required" id="child" class="passangers" type="text" autocomplete="off"  placeholder= "Childrens" required/>
+																	</div>
+															</div>
+														</div>														
 														
 														<div id="req-position">
 															<input name="start_date_required" class="start_date_required" type="text" autocomplete="off"  placeholder= "Depart" required/>
@@ -139,10 +170,10 @@
 															<input name="start_date" class="start_date" type="text" autocomplete="off" readonly='true'  placeholder= "Depart" required/>
 															<input name="end_date" class="end_date" type="text" autocomplete="off" readonly='true'  placeholder= "Return" required/>	
 														</div>
-														<div class="button">
-															<input type="submit" value="Submit" class="send-button">
+														<div class="sub">
+															<button class="button">Search</button>
 														</div>
-													</div>
+													
 														
 											</form>
 										
@@ -160,7 +191,7 @@
 			<div onclick="" class="bristol">
 				<div class="head">
 					<p class="head"><b>Bristol</b></p>
-					<p class="tickets">Tickets start from &#163;25</p>
+					<p class="tickets">Tickets start from &#163;35</p>
 				</div>		
 			</div>
 				
@@ -178,7 +209,7 @@
 			<div onclick="" class="southampton">
 				<div class="head">
 					<p class="head"><b>Southampton</b></p>
-					<p class="tickets">Tickets start from &#163;25</p>
+					<p class="tickets">Tickets start from &#163;20</p>
 				</div>	
 			</div>
 		</div>
@@ -186,7 +217,7 @@
 			<div onclick="" class="edinburgh">
 				<div class="head">
 					<p class="head"><b>Edinburgh</b></p>
-					<p class="tickets">Tickets start from &#163;25</p>
+					<p class="tickets">Tickets start from &#163;45</p>
 				</div>	
 			</div>
 		</div>
@@ -197,8 +228,7 @@
 					<b>TOP Offers</b>
 				</div>
 			</div>
-			
-			<img src="http://i67.tinypic.com/9awlev.png" style="width:100%;height:auto;">
+			<img src="http://i63.tinypic.com/2vt2i49.png" style="width:100%;height:auto;">
 
 		</div>
 		<div id="footer">
