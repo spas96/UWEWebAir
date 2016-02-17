@@ -17,7 +17,7 @@ $(function()
 	  var resultsDiv1 = document.getElementById("results1");
       var searchField1 = form.start_dest;
 	  var searchField2 = form.end_dest;
-      
+
       // now, attach the keyup handler to the search field:
 		if(document.getElementById('radio1').checked){
 			var myElement = document.querySelector(".end_date");
@@ -72,13 +72,7 @@ $(function()
 						  myElement.setAttribute("disabled", "true"); 
 						  myElementReq.removeAttribute("required"); 
 					  }
-					  else{
-						  var myElement = document.querySelector(".end_date");
-						  var myElementReq = document.querySelector(".end_date_required");
-						  myElement.style.backgroundColor = "white";
-						 myElement.removeAttribute("disabled");
-						 myElementReq.setAttribute("required", "true");
-					  }
+
 
                       resultsDiv.style.display = "none";
                   };
@@ -129,13 +123,7 @@ $(function()
 						  myElement.setAttribute("disabled", "true");
 						  myElementReq.removeAttribute("required");						  
 					  }
-					  else{
-						  var myElement = document.querySelector(".end_date");
-						  var myElementReq = document.querySelector(".end_date_required");
-						  myElement.style.backgroundColor = "white";
-						 myElement.removeAttribute("disabled");
-						 myElementReq.setAttribute("required", "true");
-					  }
+
                       resultsDiv1.style.display = "none";
                   };
                   div.style.top = top + "px";
