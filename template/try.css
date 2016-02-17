@@ -1,5 +1,10 @@
+	@font-face {
+	   font-family: myFirstFont;
+	   src: url(Comfortaa-Regular.ttf);
+	}
+	
 	body {
-		font-family:arial,helvetica,sans-serif;
+		font-family: myFirstFont;
 		background-image: url("http://i65.tinypic.com/2q1dxr8.jpg");
 		font-size:12px;
 		background-repeat: repeat;
@@ -14,9 +19,6 @@
 		padding:5px;
 	}
 	#header {
-		display: flex;
-  		justify-content: center;
-  		align-items: center;
 		position: relative;
 		width:100%;
 		height:80px;
@@ -226,9 +228,9 @@
 	}
 	
 	#header-position {
-		position: absolute;
-		bottom:-23;
-		right:30;
+		position: relative;
+		top:6.5px;
+		
 	}
 	
 	#main-position1 {
@@ -350,11 +352,11 @@
 	}
 	
 	#adl{
-		background: #FFF url(http://www.simpleimageresizer.com/_uploads/photos/7cad7666/10_13_5.png) no-repeat 4px 4px; 
+		background: #FFF url(http://i64.tinypic.com/15z49x2.png) no-repeat 4px 4px; 
 	}
 	
 	#child{
-		background: #FFF url(http://www.simpleimageresizer.com/_uploads/photos/7cad7666/10_14_5.png) no-repeat 4px 4px; 
+		background: #FFF url(http://i68.tinypic.com/t0qlfn.png) no-repeat 4px 4px; 
 	}
 	
 	.passangers {
@@ -362,6 +364,7 @@
 		-moz-border-radius: 30px; 
 		border-radius: 30px; 
 		border: 1px solid #999; 
+		font-family: myFirstFont;
 		height:30px; 
 		width: 100%; 
 		top:100px;
@@ -376,6 +379,7 @@
 			 -webkit-border-radius: 30px; 
 			-moz-border-radius: 30px; 
 			border-radius: 30px; 
+			font-family: myFirstFont;
 			border: 1px solid #999; 
 			height:30px;
 			width: 100%; 
@@ -392,6 +396,7 @@
 		background: #FFF url(http://i63.tinypic.com/2ag9pva.png) no-repeat 4px 4px; 
 		 -webkit-border-radius: 30px; 
 		-moz-border-radius: 30px; 
+		font-family: myFirstFont;
 		border-radius: 30px; 
 		border: 1px solid #999; 
 		height:30px;
@@ -407,6 +412,7 @@
 			 -webkit-border-radius: 30px; 
 			-moz-border-radius: 30px; 
 			border-radius: 30px; 
+			font-family: myFirstFont;
 			border: 1px solid #999; 
 			height:30px;
 			width: 35%; 
@@ -423,6 +429,7 @@
 		-moz-border-radius: 30px; 
 		border-radius: 30px; 
 		border: 1px solid #999; 
+		font-family: myFirstFont;
 		height:30px;
 		width: 42.5%; 
 		margin: 0 0 0 10px;
@@ -435,6 +442,7 @@
 			 -webkit-border-radius: 30px; 
 			-moz-border-radius: 30px; 
 			border-radius: 30px; 
+			font-family: myFirstFont;
 			border: 1px solid #999; 
 			height:30px;
 			width: 35%; 
@@ -449,6 +457,7 @@
 		 -webkit-border-radius: 30px; 
 		-moz-border-radius: 30px; 
 		border-radius: 30px; 
+		font-family: myFirstFont;
 		border: 1px solid #999; 
 		height:30px;
 		width: 42.5%; 
@@ -463,6 +472,7 @@
 			 -webkit-border-radius: 30px; 
 			-moz-border-radius: 30px; 
 			border-radius: 30px; 
+			font-family: myFirstFont;
 			border: 1px solid #999; 
 			height:30px;
 			width: 35%; 
@@ -506,6 +516,7 @@
 		border-radius: 30px; 
 		border: 1px solid #999; 
 		height:30px;
+		font-family: myFirstFont;
 		width: 42.5%; 
 		margin: 0 0 0 10px;
 		text-align: center;
@@ -517,6 +528,7 @@
 			 -webkit-border-radius: 30px; 
 			-moz-border-radius: 30px; 
 			border-radius: 30px; 
+			font-family: myFirstFont;
 			border: 1px solid #999; 
 			height:30px;
 			width: 35%; 
@@ -565,20 +577,116 @@
 		text-align:center;
 		height:50px;
 		width:120px;
-		border-radius:30px;
-		-moz-border-radius:30px;
-		-webkit-border-radius:30px;
+		font-family: myFirstFont;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
 	}
 	
-/*	@media only screen and (min-width: 1350px) {
-		.button{
-			position:relative;
-			display: flex;
-			justify-content: flex-end;
-			top:120px;
-			right:-300px;
+	.button-top {
+		font-family: myFirstFont; 
+		text-shadow: 2px 2px black;
+		outline: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 10px 10px;
+		cursor: pointer;
+	}
+	
+	@media only screen and (min-width: 1350px) {
+		.button-top {
+			font-family: myFirstFont; 
+			text-shadow: 2px 2px black;
+			outline: none;
+			
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 22px;
+			margin: 10px 20px;
+			cursor: pointer;
 		}
-	}*/
+	}
+	
+	.account {
+		position: absolute;
+		top:0px;
+		right:10px;
+		font-family: myFirstFont; 
+		text-shadow: 2px 2px black;
+		outline: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 10px 10px;
+		cursor: pointer;
+	}
+	
+	.slide {
+		visibility:hidden;
+		position:absolute;
+		right: 11%;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		top:70px;
+		background-color: #eeeeee;
+		height: 0px;
+		width:170px;
+		cursor: pointer;
+		overflow:hidden;
+		transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-ms-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		-webkit-transition:all 500ms ease;
+	}
+	
+	@media only screen and (min-width: 1050px) {
+		.slide {
+			visibility:hidden;
+			position:absolute;
+			right: 11%;
+			border-radius:10px;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			top:70px;
+			background-color: #eeeeee;
+			height: 0px;
+			width:190px;
+			cursor: pointer;
+			overflow:hidden;
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			-webkit-transition:all 500ms ease;
+		}
+	}
+	
+	.button1 {
+		background-color: #4CAF50;
+		 -webkit-border-radius: 10px; 
+		-moz-border-radius: 10px; 
+		border-radius: 10px; 
+		outline: none;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	
 	#radio {
 		display: flex;
   		justify-content: center;
@@ -653,6 +761,9 @@
 	}
 	
 	#header-gradient {
+				display: flex;
+  		justify-content: center;
+  		align-items: center;
 		position:relative;
 		width:100%;
 		height:100%;
@@ -662,8 +773,6 @@
 		background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
 		background: -webkit-linear-gradient(#b0c4de 0%, #8c9cb1	50%, #b0c4de 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC));
 		background: linear-gradient(#3d605f 0%, #177246	50%, #3d605f 100%); , color-stop(0%,#CCCCCC),color-stop(90%,#ba8fce), color-stop(0%,#dddd ), color-stop(100%,#CCCCCC)); /* Standard syntax (must be last) */
-		font-size:23;
-		text-shadow: 2px 2px #3d605f;
 	}
 	
 	.from { 
