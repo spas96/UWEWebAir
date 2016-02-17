@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	"use strict"
-
+	
+	$("html,body").animate({scrollTop: 0}, 500);
 	var inputBox1 = document.getElementById('adl');
 	inputBox1.onchange = function(){
 		inputBox1.value = inputBox1.value.replace(/[^0-9]/g, '');
