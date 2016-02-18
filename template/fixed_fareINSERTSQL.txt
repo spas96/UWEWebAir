@@ -1,8 +1,0 @@
-INSERT INTO fixed_fare (ff_fare_num, ff_journey_start, ff_journey_end, ff_journey_fare)
-VALUES ('001', 'Bristol', 'Manchester','30'),
- ('002', 'Bristol', 'Newcastle','40'),
- ('003', 'Bristol', 'Glasgow','50'),
- ('004', 'Bristol', 'London','25'),
- ('005', 'Manchester', 'Southampton','20'),
- ('006', 'Cardiff', 'Edinburgh','45'),
- ('007', 'All other routes are charged at:','35');
