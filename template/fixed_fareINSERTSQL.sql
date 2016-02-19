@@ -17,3 +17,4 @@ VALUES ('001', 'Bristol', 'Newcastle','30.00'),
  ('016', 'Manchester', 'Southampton', '20.00'),
  ('017', 'Birmingham', 'Newcastle', '35.00'),
  ('018', 'Newcastle', 'Birmingham', '35.00');
+ 
