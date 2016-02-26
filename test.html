@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('cc_confirm').attr('disabled',true);
+		$('cc_number').keyup(function(){
+			if($(this).val().length !=0)
+				$('cc_confirm').attr('disabled', false);            
+			else
+				$('cc_confirm').attr('disabled',true);
+		})
+	});
+	</script>
+	<form>
+	<label for="cc_number">Card Number</label>
+    <input type="text" name="cc_number" id="cc_number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" size="19" required autofocus><br />
+
+	</form>
+		<input type="submit" id="cc_confirm" value="Confirm Purchase" disabled="true"/>
+	</body>
+</html>

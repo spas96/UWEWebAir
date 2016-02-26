@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>WebAir - Payment</title>
+	<script>
+	function getCreditCardType(cc_number)
+{
+
+	//start without knowing the credit card type
+	var result = "unknown";
+
+	//first check for MasterCard
+	if (/^5[1-5]/.test(cc_number))
+	{
+		result = "Mastercard";
+	}
+
+	//then check for Visa
+	else if (/^4/.test(cc_number))
+	{
+		result = "Visa";
+	}
+
+	//then check for AmEx
+	else if (/^3[47]/.test(cc_number))
+	{
+		result = "AmEx";
+	}
+ return result;
+}
+	</script>
+	
+    <link rel="stylesheet" href="styles/demo.css">
+    <meta name="viewscale" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Make your Payment</h1>
+      </header>
+      <section>        
+          <div class="credit-card-input" id="skeuocard">
+            <label for="cc_type">Card Type</label>
+            <select name="cc_type">
+              <option value="">...</option>
+              <option value="visa">Visa</option>
+              <option value="discover">Discover</option>
+              <option value="mastercard">MasterCard</option>
+              <option value="maestro">Maestro</option>
+              <option value="amex">American Express</option>
+            </select>
+            <label for="cc_number">Card Number</label>
+            <input type="text" name="cc_number" id="cc_number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" size="19" required autofocus>
+            <label for="cc_exp_month">Expiration Month</label>
+            <input type="text" name="cc_exp_month" id="cc_exp_month" placeholder="00" maxlength="2" required autofocus>
+            <label for="cc_exp_year">Expiration Year</label>
+            <input type="text" name="cc_exp_year" id="cc_exp_year" placeholder="00" maxlength="2" required autofocus>
+            <label for="cc_name">Cardholder's Name</label>
+            <input type="text" name="cc_name" id="cc_name" placeholder="Name as seen on card" required autofocus>
+            <label for="cc_cvc">Card Validation Code</label>
+            <input type="text" name="cc_cvc" id="cc_cvc" placeholder="123" maxlength="3" size="3" required autofocus><br></br>
+			<button for="cc_confirm">Confirm Purchase</button>
+          </div>
+      </section>      
+  </body>
+</html>
+
