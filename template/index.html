@@ -93,7 +93,7 @@ window.addEventListener("load", function(){
 				<div id="header-position">
 					
 					<form>
-						<a href="#" id="home" style="border-bottom: 1px solid #e02e36;" class="button-top">Home</a>
+						<a href="/webprog/WebAir/" id="home" style="border-bottom: 1px solid #e02e36;" class="button-top">Home</a>
 						<a href="#" id="info" class="button-top">Flights Info</a>
 						<a href="#" id="manage" class="button-top">Manage Ticket</a>
 						<a href="#" id="about" class="button-top">About Us</a>
@@ -140,7 +140,7 @@ window.addEventListener("load", function(){
 											
 											<br>
 											
-											<form id="search-box">
+											<form id="search-box" action="results.py" method="POST">
 											
 													
 												
@@ -154,11 +154,11 @@ window.addEventListener("load", function(){
 														<div id="main-position3">
 															<div id="ways">
 																<div id="contentcolumn">
-																	<input type="radio" name="radio" id="radio1" class="radio" checked/>
+																	<input type="radio" name="radio" id="radio1" value="1" class="radio" checked/>
 																	<label for="radio1">One Way</label>
 																</div>
 																<div id="leftcolumn">
-																		<input type="radio" name="radio" id="radio2" class="radio"/>
+																		<input type="radio" name="radio" id="radio2" value="2" class="radio"/>
 																		<label for="radio2">Return</label>
 																</div>
 															</div>
