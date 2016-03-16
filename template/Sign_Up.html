@@ -1,0 +1,245 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+<link rel="StyleSheet" href="Sign_Up.css" type="text/css" media="screen">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="Password_Validation.js" type="text/javascript"></script>
+<script src="Password_Requirement.js" type="text/javascript"></script>
+
+
+<script>
+$(document).ready(function () {
+	"use strict"
+	
+	$("html,body").animate({scrollTop: 0}, 500);
+
+})
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	$("#load_screen").animate({ opacity: '0'}, 3000, function(){
+	document.body.removeChild(load_screen);
+	});
+	});
+	
+	function slider() {
+		var obj = document.getElementById('slide'); 
+		obj.style.visibility = (obj.style.visibility == 'visible') ? 'hidden' : 'visible';
+		obj.style.height = (obj.style.height == '0px' || obj.style.height == '') ? '150px' : '0px';
+	}
+
+</script>
+<script>
+jQuery(function($){ //on document.ready
+Object.defineProperty(Array.prototype, "remove", {
+    enumerable: false,
+    value: function (itemToRemove) {
+        var removeCounter = 0;
+
+        for (var index = 0; index < this.length; index++) {
+            if (this[index] == itemToRemove) {
+                this.splice(index, 1);
+                removeCounter++;
+                index--;
+            }
+        }
+        return removeCounter;
+    }
+});
+
+})
+
+</script>
+<script>
+
+function checkPass()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    //Store the Confimation Message Object ...
+    var message = document.getElementById('confirmMessage');
+    //Set the colors we will be using ...
+    var goodColor = "green";
+    var badColor = "red";
+    //Compare the values in the password field 
+    //and the confirmation field
+    if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        pass2.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "Passwords Match!"
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "Passwords Do Not Match!"
+    }
+}
+
+</script>
+
+<script>
+
+$(document).ready(function() {
+
+$('input[type=password]').keyup(function() {
+    // keyup code here
+	// set password variable
+var pswd = $(this).val();
+//validate the length
+if ( pswd.length < 8 ) {
+    $('#length').removeClass('valid').addClass('invalid');
+} else {
+    $('#length').removeClass('invalid').addClass('valid');
+}
+//validate letter
+if ( pswd.match(/[A-z]/) ) {
+    $('#letter').removeClass('invalid').addClass('valid');
+} else {
+    $('#letter').removeClass('valid').addClass('invalid');
+}
+
+//validate capital letter
+if ( pswd.match(/[A-Z]/) ) {
+    $('#capital').removeClass('invalid').addClass('valid');
+} else {
+    $('#capital').removeClass('valid').addClass('invalid');
+}
+
+//validate number
+if ( pswd.match(/\d/) ) {
+    $('#number').removeClass('invalid').addClass('valid');
+} else {
+    $('#number').removeClass('valid').addClass('invalid');
+}
+}).focus(function() {
+    $('#pswd_info').show();
+}).blur(function() {
+    $('#pswd_info').hide();
+});
+}  
+
+
+</script>
+</head>
+
+
+<body>
+
+
+<div class="mpc_preloader" id="load_screen">
+	<div class="mpc_preloader18"></div>
+	<span class="mpc_preloader18_label">Loading...</span>
+</div>
+
+	<div id="wrapper">
+		<div id="header">
+
+		<div id="main1-left-clamp-results">
+		
+			<div id="clamp-gradient">
+			</div>
+		
+		</div>
+		
+		<div id="main1-right-clamp-results">
+		
+			<div id="clamp-gradient">
+			</div>
+		
+		</div>
+			<div id="box-shadow"></div>
+			<div id="header-gradient">
+			
+				<div id="header-position">
+					
+					<form>
+						<a href="/xampp/htdocs/webprog/WebAir/index.html" id="home" style="border-bottom: 1px solid #e02e36;" class="button-top">Home</a>
+						<a href="#" id="info" class="button-top">Flights Info</a>
+						<a href="#" id="manage" class="button-top">Manage Ticket</a>
+						<a href="#" id="about" class="button-top">About Us</a>
+					</form>
+					
+				</div>
+				<p class="account" onclick="slider();">Account</p>
+			</div>
+		<div id="logo-box">
+			<img src="http://i67.tinypic.com/f6w5i.png" style="width:100%;height:100%;">
+		</div>
+		</div>
+
+			<div id="results-page" style="margin-top:62px;">
+	 
+<head>
+<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
+</head>
+<body>
+<h1> Member Registration</h1>
+<div class="container">
+   
+					
+      <div  class="form">
+    		<form id="contactform"> 
+				
+				<p class="contact"><label for="title">Title:</label></p> 
+				<select class="mydropdown" id="title" placeholder="title"> <option value="">
+		
+					<option value="m1">Mr</option>
+					<option value="m2">Mrs</option>
+					<option value="m3">Ms</option>
+					<option value="m4">Miss</option>
+					<option value="o">Other</option>
+				</select><br><br> 
+			
+    			<p class="contact"><label for="name">Name:</label></p> 
+    			<span><p><input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"></p></span>
+    			 
+    			<p class="contact"><label for="email">Email:</label></p> 
+    			<span><p><input id="email" name="email" placeholder="example@domain.com" required="" type="email"></p></span>
+    			 
+                <p class="contact"><label for="pass1">Create Password:</label></p> 
+    			<span><p><input type="password" id="pass1" name="pass1" required=""></p></span>
+
+				
+                <p class="contact"><label for="pass2">Confirm Password:</label></p> 
+				<p></p>
+    			<span><p><input name="pass2" id="pass2" onkeyup="checkPass(); return false;" type="password" required=""></p></span>
+				<p class="confirmMessage" id="confirmMessage"></p>
+			  
+			  <button class="button1">Sign Up</button>
+
+   </form> 
+</div>      
+</div>
+</body>  
+			</div>
+		<div id="footer">
+		<div id="box-shadow"></div>
+			<div id="header-gradient">
+				<div id="footer-position">
+					&#174 2016 UWE WebAir. All rights reserved. 
+				</div>
+			</div>
+
+		</div>
+		<div id="slide" class="slide">
+	  		<div id="logo-box">
+				<form>
+					<p style="font-size:13px;">Sign in to see exclusive Member Pricing</p>
+					<button class="button1">Sign in</button>
+					<p>New? <a href="url" style="color:red;">Create an Account</a></p>
+				</form>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
